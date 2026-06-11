@@ -266,9 +266,10 @@ i[data-lucide] {
 
 @media (max-width: 768px) {
     .hero {
-        background-position: 70% top;
+        background-position: center top;
         align-items: flex-end;
-        padding-bottom: 40px;
+        padding-bottom: 2rem;
+        padding-top: 250px;
     }
     
     .hero-glass-card {
@@ -1380,11 +1381,18 @@ i[data-lucide] {
 
 @media (max-width: 768px) {
     .reviews-carousel-container {
-        gap: 0.5rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .reviews-carousel {
+        width: 100%;
+        flex: 0 0 100%;
+        order: 1;
     }
     .carousel-btn {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
+        order: 2;
     }
 }
 
@@ -2083,9 +2091,9 @@ i[data-lucide] {
     
     /* Layout Optimizations */
     .hero {
-        min-height: auto;
-        padding-top: 120px;
-        padding-bottom: 4rem;
+        min-height: 100vh;
+        padding-top: 280px;
+        padding-bottom: 2rem;
     }
     
     .manifesto, .incluso, .indicado-para, .pricing, .faq {
