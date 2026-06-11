@@ -125,9 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3.5 Bento Grid Infinite Carousel (Desktop Only)
+    // 3.5 Bento Grid Infinite Carousel
     const bentoGrid = document.querySelector('.bento-grid');
-    if (bentoGrid && window.innerWidth > 768) {
+    if (bentoGrid) {
         // Primeiro, remover a classe 'reveal' de todos os cards
         const currentCards = Array.from(bentoGrid.children);
         currentCards.forEach(card => {

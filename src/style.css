@@ -266,10 +266,10 @@ i[data-lucide] {
 
 @media (max-width: 768px) {
     .hero {
-        background-position: center top;
+        background-position: 70% 40px;
         align-items: flex-end;
         padding-bottom: 2rem;
-        padding-top: 250px;
+        padding-top: 220px;
     }
     
     .hero-glass-card {
@@ -850,6 +850,7 @@ i[data-lucide] {
 -------------------------------------- */
 .incluso {
     padding: 8rem 0;
+    overflow-x: hidden;
     background-color: var(--color-bg);
     background-image: url('../A_high-resolution,_full-body_cinematic_photograph_202606101048.jpeg');
     background-size: cover;
