@@ -1,0 +1,39 @@
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2; /* Abaixo do texto, acima do background */
+  pointer-events: none;
+}
+
+.fire-particle {
+  position: absolute;
+  bottom: -20px;
+  background-color: #ffaa00;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px #ff5500, 0 0 20px 5px #ff2a00;
+  opacity: 0;
+  animation: floatUpAndDrift linear infinite;
+  filter: blur(0.5px);
+}
+
+@keyframes floatUpAndDrift {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-40vh) translateX(var(--drift)) scale(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(calc(var(--drift) * 1.5)) scale(0.3);
+    opacity: 0;
+  }
+}

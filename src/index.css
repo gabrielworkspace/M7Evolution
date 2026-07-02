@@ -1,0 +1,35 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
+
+:root {
+  --color-primary-start: #FF7B00;
+  --color-primary-end: #FF2A00;
+  --color-primary-solid: #FF4400;
+  --color-bg: #000000;
+  --color-text: #FFFFFF;
+  --font-main: 'Clash Display', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
