@@ -18,9 +18,15 @@ export function Hero() {
           Treino personalizado para seus objetivos,<br />
           onde você estiver
         </p>
-        <button className="hero-cta animate-slide-up pulse-button" style={{ animationDelay: '0.8s' }}>
+        <a
+          href="https://wa.me/5521999269124"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hero-cta animate-slide-up pulse-button"
+          style={{ animationDelay: '0.8s' }}
+        >
           INICIAR MINHA AVALIAÇÃO AGORA
-        </button>
+        </a>
       </div>
     </section>
   );
